@@ -10,7 +10,8 @@
 }
 
 .showcase p {
-    margin: 20px 0;
+    margin: 20px 50px;
+    align-items: center;
 }
 
 .showcase .grid {
@@ -19,10 +20,27 @@
     gap: 30px;
 }
 
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.intro-img {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 95px;
+}
+
 .showcase-form {
     position: relative;
     top: 60px;
-    height: 350px;
+    height: 280px;
     width: 400px;
     padding: 40px;
     z-index: 100;
@@ -57,3 +75,4 @@
     background: $white;
     transform: skewY(-2deg);
 }
+

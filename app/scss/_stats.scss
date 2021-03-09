@@ -1,4 +1,13 @@
 .stats {
     padding-top: 100px;
     color: $darkBlue;
+    animation: slideInFromBottom 1s ease-in;
+}
+
+.link-3 {
+    text-align: center;
+    color: $darkBlue;
+    padding: 50px;
+    margin: 20px 0;
+    line-height: 1.3;
 }

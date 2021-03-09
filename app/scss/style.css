@@ -107,8 +107,30 @@ img {
   height: 100%;
 }
 
+.grid-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+/* Margin */
 .my-1 {
   margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
 }
 
 .navbar {
@@ -150,7 +172,10 @@ img {
 }
 
 .showcase p {
-  margin: 20px 0;
+  margin: 20px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .showcase .grid {
@@ -160,10 +185,35 @@ img {
   gap: 30px;
 }
 
+.showcase-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.intro-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 95px;
+}
+
 .showcase-form {
   position: relative;
   top: 60px;
-  height: 350px;
+  height: 280px;
   width: 400px;
   padding: 40px;
   z-index: 100;
@@ -203,5 +253,15 @@ img {
 .stats {
   padding-top: 100px;
   color: #2d314d;
+  -webkit-animation: slideInFromBottom 1s ease-in;
+          animation: slideInFromBottom 1s ease-in;
+}
+
+.link-3 {
+  text-align: center;
+  color: #2d314d;
+  padding: 50px;
+  margin: 20px 0;
+  line-height: 1.3;
 }
 /*# sourceMappingURL=style.css.map */
