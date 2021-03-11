@@ -3,6 +3,16 @@
     height: 70px;
 }
 
+.logo {
+    color: $white;
+}
+
+.title-txt {
+    position: absolute;
+    margin-left: 35px;
+    color: $white;
+}
+
 .navbar .flex {
     justify-content: space-between;
 }

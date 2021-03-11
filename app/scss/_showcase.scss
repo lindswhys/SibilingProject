@@ -1,7 +1,15 @@
 .showcase {
-    height: 400px;
+    height: 450px;
     background-color: $brightBlue;
     position: relative;
+    text-align: center;
+}
+
+.showcase-text {
+    max-width: 160px;
+    margin: auto;
+    text-align: center;
+    color: $white;
 }
 
 .showcase h1 {
@@ -10,19 +18,19 @@
 }
 
 .showcase p {
-    margin: 20px 50px;
+    color: $white;
     align-items: center;
 }
 
 .showcase .grid {
     overflow: visible;
     grid-template-columns: 55% 45%;
-    gap: 30px;
+    gap: 50px;
 }
 
 .showcase-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.35fr);
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -31,10 +39,10 @@
 .intro-img {
     display: grid;
     grid-template-columns:repeat(2, 1fr);
-    max-width: 30%;
+    max-width: 150px;
+    margin: auto;
     height: auto;
     border-radius: 50%;
-    margin: 0 95px;
 }
 
 .showcase-form {

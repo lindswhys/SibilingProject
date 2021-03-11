@@ -13,10 +13,11 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.3;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: white;
-  color: white;
+  color: #2d314d;
+  overflow-x: hidden;
 }
 
 a {
@@ -75,6 +76,66 @@ img {
           transform: scale(0.98);
 }
 
+.bg-primary,
+.btn-primary {
+  background-color: #0468ec;
+  color: white;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: #1fb2aa;
+  color: white;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: #2d314d;
+  color: white;
+}
+
+.bg-light,
+.btn-light {
+  background-color: #9698a6;
+  color: #2d314d;
+}
+
+.text-primary {
+  color: #0468ec;
+}
+
+.text-secondary {
+  color: #1fb2aa;
+}
+
+.text-dark {
+  color: #2d314d;
+}
+
+.text-light {
+  color: #9698a6;
+}
+
+.lead {
+  font-size: 2.25rem;
+}
+
+.sm {
+  font-size: 0.875rem;
+}
+
+.md {
+  font-size: 1.125rem;
+}
+
+.lg {
+  font-size: 2.25rem;
+}
+
+.xlg {
+  font-size: 3.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -97,7 +158,6 @@ img {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -112,7 +172,6 @@ img {
       grid-template-columns: repeat(3, 1fr);
 }
 
-/* Margin */
 .my-1 {
   margin: 1rem 0;
 }
@@ -133,9 +192,79 @@ img {
   margin: 4rem 0;
 }
 
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
 .navbar {
   background-color: #0468ec;
   height: 70px;
+}
+
+.logo {
+  color: white;
+}
+
+.title-txt {
+  position: absolute;
+  margin-left: 35px;
+  color: white;
 }
 
 .navbar .flex {
@@ -162,9 +291,17 @@ img {
 }
 
 .showcase {
-  height: 400px;
+  height: 450px;
   background-color: #0468ec;
   position: relative;
+  text-align: center;
+}
+
+.showcase-text {
+  max-width: 160px;
+  margin: auto;
+  text-align: center;
+  color: white;
 }
 
 .showcase h1 {
@@ -172,7 +309,7 @@ img {
 }
 
 .showcase p {
-  margin: 20px 50px;
+  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -182,14 +319,14 @@ img {
   overflow: visible;
   -ms-grid-columns: 55% 45%;
       grid-template-columns: 55% 45%;
-  gap: 30px;
+  gap: 50px;
 }
 
 .showcase-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (0.35fr)[2];
+      grid-template-columns: repeat(2, 0.35fr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -204,10 +341,10 @@ img {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  max-width: 30%;
+  max-width: 150px;
+  margin: auto;
   height: auto;
   border-radius: 50%;
-  margin: 0 95px;
 }
 
 .showcase-form {
@@ -251,17 +388,23 @@ img {
 }
 
 .stats {
-  padding-top: 100px;
+  padding-top: 70px;
   color: #2d314d;
-  -webkit-animation: slideInFromBottom 1s ease-in;
-          animation: slideInFromBottom 1s ease-in;
 }
 
-.link-3 {
-  text-align: center;
-  color: #2d314d;
-  padding: 50px;
-  margin: 20px 0;
-  line-height: 1.3;
+.social-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  background: #2d314d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.cloud .grid {
+  -ms-grid-columns: 4fr 3fr;
+      grid-template-columns: 4fr 3fr;
 }
 /*# sourceMappingURL=style.css.map */
